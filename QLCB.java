@@ -17,14 +17,14 @@ public class QLCB {
     }
 
     public void danhsachCB() {
-        for (int i = 0; i < this.danhSach.size(); i++) {
-            System.out.println(this.danhSach.get(i));
+        for (QuanLyCanBo sach : this.danhSach) {
+            System.out.println(sach);
         }
     }
     public void timKiem(String name){
-        for (int i = 0; i < this.danhSach.size(); i++) {
-            if(this.danhSach.get(i).getName().equals(name)){
-                System.out.println(this.danhSach.get(i));
+        for (QuanLyCanBo sach : this.danhSach) {
+            if (sach.getName().equals(name)) {
+                System.out.println(sach);
             }
         }
     }
